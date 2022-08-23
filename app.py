@@ -1,8 +1,8 @@
 from markupsafe import escape
 from flask import Flask, abort
 
-app = Flask(__name__)
-
+application = Flask(__name__)
+app = application
 
 @app.route('/')
 @app.route('/index/')
