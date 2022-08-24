@@ -1,8 +1,8 @@
 from flask import Flask, abort
 
-app = Flask(__name__)
+application = Flask(__name__)
 
-@app.route('/')
+@application.route('/',methods=['GET','POST'])
 def hello_world():
     return '<h1>Hello, World!</h1>'
 
