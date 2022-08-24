@@ -1,9 +1,9 @@
-from flask import Flask, abort
+from flask import Flask
+app = Flask(__name__)
 
-application = Flask(__name__)
-
-@application.route('/',methods=['GET','POST'])
+@app.route('/')
 def hello_world():
-    return '<h1>Hello, World!</h1>'
+    return 'Hello, World!'
 
-
+if __name__ == "__main__":
+    app.run()
